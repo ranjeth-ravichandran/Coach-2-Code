@@ -85,3 +85,6 @@ if (age >= 18) {
 if (age >= 18 || haveParentalConsent) {
     console.log("Can enroll")
 }
+
+// Who created Javascript
+// Brendan Eich

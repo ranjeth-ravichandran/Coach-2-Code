@@ -1,0 +1,58 @@
+:root {
+    --background-color-1: #5a878a;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    background-color: #222;
+    color: #ffffff;
+}
+
+header {
+    background-color: var(--background-color-1);
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the header stays above other content by putting it
+    forward in the 3rd dimension*/
+}
+
+h1 {
+    font-size: 3em;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: rgb(52, 70, 85);
+}
+
+main {
+    margin: 20px;
+}
+
+ul div {
+    color: #222;
+    background-color: var(--background-color-1);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: var(--background-color-1);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Push the footer to the bottom */
+}

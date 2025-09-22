@@ -1,0 +1,126 @@
+:root {
+    --background-color-1: #5a878a;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    background-color: #222;
+    color: #ffffff;
+}
+
+header {
+    background-color: var(--background-color-1);
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the header stays above other content by putting it
+    forward in the 3rd dimension*/
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: rgb(52, 70, 85);
+}
+
+main {
+    margin: 20px;
+}
+
+form {
+  width: inherit;
+  background-color: var(--background-color-1);
+  padding: 20px;
+  border-radius: 12px;
+  color: #222;
+  display: flex;
+  flex-direction: column; /* stack body + button */
+}
+
+.form-body {
+  display: flex;
+  flex-direction: row; /* left + right side by side */
+  gap: 20px; /* space between left & right */
+  margin-bottom: 20px;
+}
+
+textarea, input {
+  background-color: #839496;
+  border: 1px solid black;
+  padding: 2px;
+  border-radius: 8px;
+  text-decoration: none;
+  outline: none;
+}
+
+form * {
+  margin-bottom: 5px;
+}
+
+.left, .right {
+  flex: 1; /* split evenly */
+}
+
+.left {
+  display: grid;
+  grid-template-columns: 120px 1fr; /* label fixed width, input fills rest */
+  gap: 8px 12px; /* row gap, column gap */
+}
+
+.left label {
+  align-self: center; /* vertical centering with input */
+}
+
+.left input {
+  width: 100%; /* stretch input across available space */
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-btn {
+  align-self: center; /* center button, or use flex-end for right */
+  padding: 10px 20px;
+  width: 100%;
+}
+
+ul {
+    padding: 0;
+}
+
+ul div {
+    color: #222;
+    background-color: var(--background-color-1);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: var(--background-color-1);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Push the footer to the bottom */
+}

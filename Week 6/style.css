@@ -146,10 +146,8 @@ footer {
 
 @media screen and (max-width: 600px) {
   
-.form-body {
-  display: flex;
-  flex-direction: column; /* left + right side by side */
-  gap: 20px; /* space between left & right */
-  margin-bottom: 20px;
-}
+  .form-body {
+    flex-direction: column;
+  }
+  
 }
